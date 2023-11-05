@@ -7,10 +7,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let vehiculo of vehiculos">
-        <td>{{ vehiculo.marca }}</td>
-        <td>{{ vehiculo.linea }}</td>
-        <td>{{ vehiculo.modelo }}</td>
+        <tr *ngFor="let vehicle of vehicles">
+        <td>{{ vehicle.marca }}</td>
+        <td>{{ vehicle.linea }}</td>
+        <td>{{ vehicle.modelo }}</td>
         </tr>
     </tbody>
 </table>
+<h3>Total de Vehículos por Marca</h3>
+<ul>
+  <li *ngFor="let brandCount of vehiclesByBrand">
+    {{ brandCount.brand }}: {{ brandCount.count }}
+  </li>
+</ul>

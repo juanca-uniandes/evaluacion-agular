@@ -15,4 +15,5 @@ export class VehiclesApiService {
   getVehiculos(): Observable<Vehicle[]> {
     return this.http.get<Vehicle[]>(this.apiUrl);
   }
+  
 }
