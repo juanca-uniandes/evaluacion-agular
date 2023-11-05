@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Vehicle } from '../../models/vehicle';
+import { Vehicle } from '../../models/Vehicle';
 import { VehiclesApiService } from '../../services/vehicles-api.service';
 
 @Component({
